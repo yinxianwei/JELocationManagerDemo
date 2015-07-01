@@ -12,18 +12,9 @@
 		9607096B1B428AB700F452C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960709691B428AB700F452C7 /* Main.storyboard */; };
 		9607096D1B428AB700F452C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9607096C1B428AB700F452C7 /* Images.xcassets */; };
 		960709701B428AB700F452C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9607096E1B428AB700F452C7 /* LaunchScreen.xib */; };
-		9607097C1B428AB700F452C7 /* JELocationManagerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9607097B1B428AB700F452C7 /* JELocationManagerDemoTests.swift */; };
+		960709871B428AD900F452C7 /* JELocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960709861B428AD900F452C7 /* JELocationManager.swift */; };
+		960709891B428FB000F452C7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960709881B428FB000F452C7 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		960709761B428AB700F452C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 960709581B428AB700F452C7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9607095F1B428AB700F452C7;
-			remoteInfo = JELocationManagerDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		960709601B428AB700F452C7 /* JELocationManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JELocationManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,9 +24,8 @@
 		9607096A1B428AB700F452C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9607096C1B428AB700F452C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9607096F1B428AB700F452C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		960709751B428AB700F452C7 /* JELocationManagerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JELocationManagerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9607097A1B428AB700F452C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9607097B1B428AB700F452C7 /* JELocationManagerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JELocationManagerDemoTests.swift; sourceTree = "<group>"; };
+		960709861B428AD900F452C7 /* JELocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JELocationManager.swift; sourceTree = "<group>"; };
+		960709881B428FB000F452C7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		960709721B428AB700F452C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				960709891B428FB000F452C7 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +43,8 @@
 		960709571B428AB700F452C7 = {
 			isa = PBXGroup;
 			children = (
+				960709851B428ACC00F452C7 /* JELocationManager */,
 				960709621B428AB700F452C7 /* JELocationManagerDemo */,
-				960709781B428AB700F452C7 /* JELocationManagerDemoTests */,
 				960709611B428AB700F452C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				960709601B428AB700F452C7 /* JELocationManagerDemo.app */,
-				960709751B428AB700F452C7 /* JELocationManagerDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,26 +73,18 @@
 		960709631B428AB700F452C7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				960709881B428FB000F452C7 /* CoreLocation.framework */,
 				960709641B428AB700F452C7 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		960709781B428AB700F452C7 /* JELocationManagerDemoTests */ = {
+		960709851B428ACC00F452C7 /* JELocationManager */ = {
 			isa = PBXGroup;
 			children = (
-				9607097B1B428AB700F452C7 /* JELocationManagerDemoTests.swift */,
-				960709791B428AB700F452C7 /* Supporting Files */,
+				960709861B428AD900F452C7 /* JELocationManager.swift */,
 			);
-			path = JELocationManagerDemoTests;
-			sourceTree = "<group>";
-		};
-		960709791B428AB700F452C7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9607097A1B428AB700F452C7 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			path = JELocationManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,24 +107,6 @@
 			productReference = 960709601B428AB700F452C7 /* JELocationManagerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		960709741B428AB700F452C7 /* JELocationManagerDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 960709821B428AB700F452C7 /* Build configuration list for PBXNativeTarget "JELocationManagerDemoTests" */;
-			buildPhases = (
-				960709711B428AB700F452C7 /* Sources */,
-				960709721B428AB700F452C7 /* Frameworks */,
-				960709731B428AB700F452C7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				960709771B428AB700F452C7 /* PBXTargetDependency */,
-			);
-			name = JELocationManagerDemoTests;
-			productName = JELocationManagerDemoTests;
-			productReference = 960709751B428AB700F452C7 /* JELocationManagerDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +118,6 @@
 				TargetAttributes = {
 					9607095F1B428AB700F452C7 = {
 						CreatedOnToolsVersion = 6.3.2;
-					};
-					960709741B428AB700F452C7 = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 9607095F1B428AB700F452C7;
 					};
 				};
 			};
@@ -182,7 +135,6 @@
 			projectRoot = "";
 			targets = (
 				9607095F1B428AB700F452C7 /* JELocationManagerDemo */,
-				960709741B428AB700F452C7 /* JELocationManagerDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,13 +150,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		960709731B428AB700F452C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -214,26 +159,11 @@
 			files = (
 				960709681B428AB700F452C7 /* ViewController.swift in Sources */,
 				960709661B428AB700F452C7 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		960709711B428AB700F452C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9607097C1B428AB700F452C7 /* JELocationManagerDemoTests.swift in Sources */,
+				960709871B428AD900F452C7 /* JELocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		960709771B428AB700F452C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9607095F1B428AB700F452C7 /* JELocationManagerDemo */;
-			targetProxy = 960709761B428AB700F452C7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		960709691B428AB700F452C7 /* Main.storyboard */ = {
@@ -358,40 +288,6 @@
 			};
 			name = Release;
 		};
-		960709831B428AB700F452C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = JELocationManagerDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JELocationManagerDemo.app/JELocationManagerDemo";
-			};
-			name = Debug;
-		};
-		960709841B428AB700F452C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = JELocationManagerDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JELocationManagerDemo.app/JELocationManagerDemo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,14 +307,7 @@
 				960709811B428AB700F452C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		960709821B428AB700F452C7 /* Build configuration list for PBXNativeTarget "JELocationManagerDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				960709831B428AB700F452C7 /* Debug */,
-				960709841B428AB700F452C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
